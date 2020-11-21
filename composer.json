@@ -1,0 +1,38 @@
+{
+    "name": "rexlmanu/laravel-package",
+    "description": "",
+    "type": "library",
+    "keywords": [],
+    "require": {},
+    "require-dev": {},
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Emmanuel Lampe",
+            "email": "mail@emmanuel-lampe.de",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Package\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Package\\Providers\\ServiceProvider"
+            ]
+        }
+    }
+}
